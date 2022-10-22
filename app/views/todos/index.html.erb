@@ -1,0 +1,13 @@
+<%
+  @page_title = "プロフィール編集"
+
+  @args = {
+    page_title: @page_title
+  }
+%>
+
+<div id="todos", args="<%= @args.to_json %>">
+
+</div>
+
+<%= javascript_pack_tag 'hello_vue' %>
