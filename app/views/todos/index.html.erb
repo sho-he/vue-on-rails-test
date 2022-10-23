@@ -1,13 +1,12 @@
 <%
-  @page_title = "プロフィール編集"
-
   @args = {
-    page_title: @page_title
+    todos: @todos
   }
 %>
 
-<div id="todos", args="<%= @args.to_json %>">
-
+<div id="app" args="<%= @args.to_json %>">
+  {{ message }}
+  <todo-index :todos=args.todos />
 </div>
 
 <%= javascript_pack_tag 'todo/index' %>
